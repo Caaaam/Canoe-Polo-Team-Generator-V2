@@ -15,8 +15,8 @@ class player:
     def getscore(self):
         return self.score
 
-if __name__ == '__main__':
-    player()
-    player().showplayer()
-    player().getname()
-    player().getscore()
+#if __name__ == '__main__':
+#    player()
+#    player().showplayer()
+#    player().getname()
+#    player().getscore()

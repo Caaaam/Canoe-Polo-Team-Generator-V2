@@ -15,9 +15,13 @@ for row, val in players.iterrows():
     # Uncomment below to see players/score
     #playerclass.player.showplayer(playerlist[row])
 
+
 # Calls teammakerclass to sort into even teams
 Teams = teammakerclass.TeamMaker(playerlist)
 
 # Prints teams to screen, in future, update this output
-print('\nTeam Generator\n')
-print(teammakerclass.TeamMaker.getteams(Teams),'\n')
+print('\nWelcome to the Team Generator V2')
+
+teammakerclass.TeamMaker.getteams(Teams)
+
+print(f'\nThis attempts the algorithm {teammakerclass.TeamMaker.getiterations(Teams)} times and returns the best result.\n')
